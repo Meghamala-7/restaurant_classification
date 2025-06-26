@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='images/background_results.jpg') }}');
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurants Matching Your Selection</h1>
+
+    <div class="results-container">
+        <div class="card-container">
+            {% if restaurants %}
+                {% for r in restaurants %}
+                <div class="card">
+                    <h3>{{ r['Restaurant Name'] }}</h3>
+                    <p>⭐ Rating: {{ r['Aggregate rating'] }}</p>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>No restaurants found for the selected criteria.</p>
+            {% endif %}
+        </div>
+
+        {% if cuisine %}
+        <img class="cuisine-image"
+             src="{{ url_for('static', filename='images/' + cuisine|lower|replace(' ', '_') + '.jpg') }}"
+             alt="{{ cuisine }}"
+             onerror="this.onerror=null; this.src='{{ url_for('static', filename='images/default.jpg') }}';">
+        {% endif %}
+    </div>
+
+    <br><a href="/" class="back-button"> Back to Search</a>
+
+</body>
+</html>

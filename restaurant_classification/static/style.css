@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select, input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: #3d9bfc;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #140101;
+    font-family: oblique;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.card-container {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 600px; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+img.cuisine-image {
+    width: 30%;
+    height: 45%;
+    border-radius: 12px;
+}
+
+.back-button {
+    display: inline-block;
+    margin: 40px 30px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #61add8; 
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #6ad2ee;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: #330351;
+    font-family: lucida;
+}
