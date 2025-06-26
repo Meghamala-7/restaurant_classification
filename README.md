@@ -1,4 +1,4 @@
-# 🍽️ Restaurant Recommendation Web App
+# 🍽️ Restaurant classification Web App
 
 This is a machine learning-based web application that helps users find restaurants based on selected **Country Code**, **City**, and **Cuisine**. It uses a **Random Forest Classifier** trained on real-world restaurant data.
 
